@@ -9,7 +9,7 @@ class App(Tk):
   def __init__(self, ):
     super().__init__()
 
-    Func.On_open()
+    Func.On_open(self)
 
     Load_Page(self)
     self.mainloop()
