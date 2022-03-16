@@ -1,0 +1,23 @@
+|--
+  df_bg         : gray23
+  df_fg         : white
+  df_font       : CaviarDreems
+  df_font_size  : 22
+--|
+
+<|
+  . : tk
+  {|
+    bg : df_bg
+  |}
+
+  [|
+    title : Tk_test
+    rowconfigure: 1
+    columnconfigure: 0
+  |]
+
+  (|
+    structure: master : __master__ , r : {"px":10,"py":10, "sx":80, "sy":80}
+  |)
+>|
