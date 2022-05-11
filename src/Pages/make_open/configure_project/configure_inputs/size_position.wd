@@ -1,0 +1,140 @@
+<|
+  tk_name 					: __master__
+	preset						: slim , normal
+  
+  [|
+    grid						: row 	: 0 , column : 0 , sticky : nswe
+		rowconfigure		: index : 1 , weight	: 1
+    columnconfigure	: index : 0 , weight	: 1
+  |]
+|>
+
+<|
+	tk_name 					: width_height
+	tk_type						: Label
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: Width and Height Size
+	|}
+
+	[|
+		grid						: row : 0 , column : 0 , sticky : we , columnspan: 2 , pady : (0 , 1) , ipady : 2
+	|]
+|>
+
+<|
+	tk_name 					: box_size_w
+	tk_type						: Button
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: v aw
+	|}
+
+	[|
+		grid						: row : 1 , column : 0 , sticky : we , padx : (0 , 1)
+	|]
+|>
+
+<|
+	tk_name 					: box_size_h
+	tk_type						: Button
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: v ah
+	|}
+
+	[|
+		grid						: row : 1 , column : 1 , sticky : we
+	|]
+|>
+
+<|
+	tk_name 					: ent_size_w
+	tk_type						: Entry
+	preset 						: slim
+
+	[|
+		grid						: row : 2 , column : 0 , sticky : we , padx : (0 , 1)
+	|]
+|>
+
+<|
+	tk_name 					: ent_size_h
+	tk_type						: Entry
+	preset						: slim
+
+	[|
+		grid						: row : 2 , column : 1 , sticky : we
+	|]
+|>
+
+<|
+	tk_name 					: place_x_y
+	tk_type						: Label
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: X and Y place
+	|}
+
+	[|
+		grid						: row : 3 , column : 0 , sticky : we , columnspan: 2 , pady : (0 , 1) , ipady : 2
+	|]
+|>
+
+<|
+	tk_name 					: box_place_x
+	tk_type						: Button
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: v ax
+	|}
+
+	[|
+		grid						: row : 4 , column : 0 , sticky : we , padx : (0 , 1)
+	|]
+|>
+
+<|
+	tk_name 					: box_place_y
+	tk_type						: Button
+
+	preset						: slim , destac , Text_items_normal
+
+	{|
+		text 						: v ay
+	|}
+
+	[|
+		grid						: row : 4 , column : 1 , sticky : we
+	|]
+|>
+
+<|
+	tk_name 					: ent_place_x
+	tk_type						: Entry
+	preset						: slim
+
+	[|
+		grid						: row : 5 , column : 0 , sticky : we , padx : (0 , 1)
+	|]
+|>
+
+<|
+	tk_name 					: ent_place_y
+	tk_type						: Entry
+	preset						: slim
+
+	[|
+		grid						: row : 5 , column : 1 , sticky : we
+	|]
+|>

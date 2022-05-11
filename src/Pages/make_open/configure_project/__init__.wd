@@ -1,0 +1,9 @@
+<|
+  tk_name                 : __master__
+  preset                  : slim , normal
+
+  [|
+    rowconfigure          : index : 0 , weight: 1
+    columnconfigure       : index : 1 , weight: 1
+  |]
+|>

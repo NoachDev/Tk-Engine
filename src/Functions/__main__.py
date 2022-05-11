@@ -1,15 +1,14 @@
-import pathlib, json
+from tkinter import filedialog
+from tkinter import *
+import Tk_functions
 
-class On_open:
-  def __init__(self, __master__):
-    import __main__
+class App(Tk):
+  def __init__(self):
+    super().__init__()
 
-    self.json_file_configure = pathlib.Path(__file__).parents[1].joinpath("config.json")
+    Tk_functions.widgets_config.widgets_load.Modify_widgets(self)
 
-    with open(self.json_file_configure, "r") as file:
-      self.json_file_data    = json.load(file) 
-    
-    self.project = self.json_file_data["project"]
+    self.mainloop()
 
-    if self.project == None:
-      vars(__main__)["choose"].Init_open(__master__)
+if __name__ == "__main__":
+  App()

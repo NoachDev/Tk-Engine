@@ -1,0 +1,42 @@
+<|
+  tk_name                 : __master__
+  preset                  : slim , normal
+  
+  [|
+    place                 : x : 0 , y : 0 , relwidth : 1 , relheight : 0.18
+    rowconfigure          : index : 0 , weight: 1
+    columnconfigure       : index : 0 , weight: 1
+  |]
+|>
+
+<|
+  tk_name                 : name
+  tk_type                 : Entry
+  preset                  : slim
+
+  [|
+    place                 : anchor : sw , relx : 0.135 , rely : 0.4 , relwidth : 0.73 , relheight : 0.15
+  |]
+|>
+
+<|
+  tk_name                 : path
+  tk_type                 : Entry
+  preset                  : slim
+
+  [|
+    place                 : anchor : nw , relx : 0.135 , rely : 0.6 , relwidth : 0.7 , relheight : 0.15
+  |]
+|>
+
+<|
+  tk_name                 : search
+  tk_type                 : Button
+
+  preset                  : slim , destac
+
+  [|
+    place                 : anchor : nw , relx : 0.845 , rely : 0.6 , relheight : 0.15
+  |]
+|>
+

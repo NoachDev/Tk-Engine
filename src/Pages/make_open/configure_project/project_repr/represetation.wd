@@ -1,0 +1,20 @@
+<|
+  tk_name                 : __master__
+  preset                  : slim , normal
+
+  [|
+    place                 : x : 0 , rely : 0.18 , relwidth : 1 , relheight : 0.82
+    rowconfigure          : index : 0 , weight: 1
+    columnconfigure       : index : 0 , weight: 1
+  |]
+|>
+
+<|
+  tk_name                 : canvas
+  tk_type                 : Canvas
+  preset                  : slim , destac
+
+  [|
+    place                 : relx : 0.005 , rely : 0, relwidth : 0.99, relheight : 0.99
+  |]
+|>

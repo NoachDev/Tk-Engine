@@ -1,0 +1,37 @@
+<|
+  tk_name       : __master__
+  preset        : slim , normal
+  [|
+    place       : x : 0 , y : 0 , relwidth : 1 , relheight : 0.03
+  |]
+|>
+
+<|
+  tk_name       : back
+  tk_type       : Button
+  preset        : slim , normal , Text_items_normal
+
+  {|
+    text        : <--
+    fg          : "white"
+  |}
+  
+  [|
+    place       : x : 0 , y : 0, relwidth : 0.025 , relheight : 1
+  |]
+|>
+
+<|
+  tk_name       : go
+  tk_type       : Button
+  preset        : slim , normal , Text_items_normal
+
+  {|
+    text        : -->
+    fg          : "white"
+  |}
+  
+  [|
+    place       : relx : 1 , y : 0, relwidth : 0.025 , relheight : 1, anchor : ne
+  |]
+|>
