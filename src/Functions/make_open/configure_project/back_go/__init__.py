@@ -32,7 +32,7 @@ class Main:
         file.writelines([
           "from tkinter import *\n"       ,
           "import Tk_functions\n\n"       ,
-          "class App():\n"                ,
+          "class App(Tk):\n"                ,
           "\tdef __init__(self):\n"       ,
           "\t\tsuper().__init__()\n"      ,
           "\t\tTk_functions.widgets_config.widgets_load.Modify_widgets(self)\n",
@@ -50,15 +50,15 @@ class Main:
 
         file.writelines([
           "<|\n"                          ,
-          "\ttk_name\t:\t__master__\n\n"    ,
+          "\ttk_name\t:\t__master__\n\n"  ,
           "\t{|\n"                        ,
-          "\t\tbg\t:\tgray23\n"             ,
+          "\t\tbg\t:\tgray23\n"           ,
           "\t|}\n\n"                      ,
           "\t[|\n"                        ,
           f"\t\ttitle\t:\t{str(info['name'])}\n" ,
           "\t|]\n\n"                      ,
           "\t(|\n"                        ,
-          "\t\tstructure\t:\tmaster : #/__master__/ , r : {" + f"px : {info['coords'][4]} , py : {info['coords'][5]} , sx : {info['coords'][6]} , sy : {info['coords'][7]}" + "}\n",
+          f"\t\tstructure\t:\tmaster : #/__master__/ , r : {{px : {info['coords'][4]} , py : {info['coords'][5]} , sx : {info['coords'][6]} , sy : {info['coords'][7]}}} \n",
           "\t|)\n\n"                      ,
           "|>\n\n"
           ])
